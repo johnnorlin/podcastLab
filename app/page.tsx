@@ -1,5 +1,6 @@
 import { Login } from "@/app/components/buttons/Login";
 import Image from "next/image";
+import { Navbar } from "./components/nav/Navbar";
 
 export default function Home() {
   return (
