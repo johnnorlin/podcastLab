@@ -3,7 +3,7 @@ import Image from "next/image";
 import { NextPage } from "next";
 import { getUserProfileData } from "@/app/services/profile.service";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
-import { LogoutButton } from "../components/buttons/Logout";
+import { Logout } from "../components/buttons/Logout";
 
 const Home: NextPage = withPageAuthRequired(
   async () => {
@@ -21,17 +21,14 @@ const Home: NextPage = withPageAuthRequired(
             className="ml-2"
           ></Image>
         </div>
-        <LogoutButton />
         <div className=" flex flex-col items-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 ">
           <Link
             href="/create"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl text-center font-semibold`}>
               Start a session{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
@@ -41,14 +38,12 @@ const Home: NextPage = withPageAuthRequired(
           </Link>
 
           <Link
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="/join"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl text-center font-semibold`}>
               Join a session{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>

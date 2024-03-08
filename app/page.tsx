@@ -14,9 +14,6 @@ export default function Home() {
           className="ml-2"
         ></Image>
       </div>
-      <div className=" flex flex-col items-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 ">
-        <Login />
-      </div>
     </main>
   );
 }
