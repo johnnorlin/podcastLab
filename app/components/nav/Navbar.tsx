@@ -19,16 +19,7 @@ export const Navbar = () => {
     );
   }
   return (
-    <span className="w-full flex flex-row place-items-center gap-2">
-      <div className="text-4xl">Podcast </div>{" "}
-      <div className="text-4xl">Lab</div>
-      <Image
-        src="/recording logo.png"
-        alt="record logo"
-        height="77"
-        width="77"
-        className="ml-2"
-      ></Image>
+    <span className="w-full ">
       <nav className="w-full flex justify-end">
         {!user && (
           <>
